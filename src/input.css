@@ -5,7 +5,7 @@
 @layer utilities {
   .container {
     margin: 0 auto;
-    width: min(80%, 1200px);
+    width: min(85%, 1200px);
   }
 }
 @layer base {
