@@ -2,9 +2,6 @@
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
-    container: {
-      center: true,
-    },
     colors: {
       'pink-primary': 'hsl(322, 100%, 66%)',
       neutral: {

@@ -444,6 +444,21 @@ video {
   display: none;
 }
 
+h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+body,
+  button {
+  font-family: 'Open Sans';
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -544,26 +559,65 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.font-Open_Sans {
-  font-family: Open Sans;
+.container {
+  width: 100%;
 }
 
-.font-Poppins {
-  font-family: Poppins, sans-serif;
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.font-Open_Sans {
+  font-family: Open Sans;
 }
 
 .text-\[18px\] {
   font-size: 18px;
 }
 
+.container {
+  margin: 0 auto;
+  width: min(80%, 1200px);
+}
+
 @font-face {
-  font-family: "Poppins";
+  font-family: 'Poppins';
 
   src: url(assets/fonts/Poppins/Poppins-Bold.ttf);
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
 
   src: url(assets/fonts/Open_Sans/static/OpenSans-Regular.ttf),
     url(assets/fonts/Open_Sans/static/OpenSans-Bold.ttf);

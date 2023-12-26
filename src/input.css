@@ -2,12 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .container {
+    margin: 0 auto;
+    width: min(80%, 1200px);
+  }
+}
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Poppins';
+    font-weight: 600;
+  }
+  body,
+  button {
+    font-family: 'Open Sans';
+  }
+}
+
 @font-face {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   src: url(assets/fonts/Poppins/Poppins-Bold.ttf);
 }
 @font-face {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   src: url(assets/fonts/Open_Sans/static/OpenSans-Regular.ttf),
     url(assets/fonts/Open_Sans/static/OpenSans-Bold.ttf);
 }
